@@ -2,6 +2,7 @@
     --main-text-color: #2C2C2C;
     --accent-color: #0F3F3C;
     --main-background-color: #FFFFFF;
+    --main-accent-color:#F07F2E;
 }
  h1,h2,h3,h4,p {
     margin: 0;
@@ -37,7 +38,25 @@ padding-bottom: 16px;
 
 }
 .logo-image {
+    
+}
+.logotype {
+    display: block;
+}
+.title-header {
+ display: block;   
+font-weight: 700;
+font-size: 24px;
+line-height: 1.6;
+letter-spacing: 0.5px;
+color: var(--main-accent-color);
+}
+.logo-title {
+    display: flex;
     margin-right: 279px;
+    align-items: center;
+    gap:8px;
+    justify-content: center;
 }
 .menu-nav-link {
 
