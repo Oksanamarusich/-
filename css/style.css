@@ -3,6 +3,9 @@
     --accent-color: #0F3F3C;
     --main-background-color: #FFFFFF;
     --main-accent-color:#F07F2E;
+
+    --indent: 16px;
+    --items: 10;
 }
  h1,h2,h3,h4,p,ul,ol {
     margin: 0;
@@ -24,7 +27,22 @@
     background-color: var(--main-background-color);
 }
 .container {
+  width: 944px;
    margin: 0;
+}
+
+/**
+  |============================
+  | card set
+  |============================
+*/
+.card-set {
+display: flex;
+flex-wrap: wrap;
+gap: var(--indent);
+}
+.card-set-item {
+flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
 }
 /**
   |============================
@@ -87,7 +105,7 @@ color: var(--main-text-color);
    |============================
  */
  .hero-container {
-    width: 944px;
+    
     height: 480px;
     background-image: url(../images/hero/picture\ 1.jpg);
     background-repeat: no-repeat;
@@ -139,6 +157,36 @@ margin-bottom: 40px;
 font-weight: 700;
 font-size: 24px;
 line-height: 40px;
+letter-spacing: 0.5px;
+color: var(--main-text-color);
+}
+
+/**
+  |============================
+  | gallery
+  |============================
+*/
+.text-body {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.5px;
+color: var(--main-text-color);
+}
+.text-gallery {
+    margin-bottom: 40px;
+}
+.friends-list {
+    --items:2;
+    
+    --indent:40px;
+}
+.third-title {
+margin-bottom: 8px;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
 letter-spacing: 0.5px;
 color: var(--main-text-color);
 }
