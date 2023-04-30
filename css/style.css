@@ -4,7 +4,7 @@
     --main-background-color: #FFFFFF;
     --main-accent-color:#F07F2E;
 }
- h1,h2,h3,h4,p {
+ h1,h2,h3,h4,p,ul,ol {
     margin: 0;
     padding: 0;
  }
@@ -12,11 +12,19 @@
 .link {
     text-decoration: none;
 }
+.list {
+  list-style:none;
+  text-decoration: none;
+}
+
+.section {
+    margin-bottom: 60px;
+    padding-left: 248px;
+    padding-right: 248px;
+    background-color: var(--main-background-color);
+}
 .container {
-    width: 1440px;
-    padding-left: 240px;
-    padding-right: 240px;
-    margin: 0;
+   margin: 0;
 }
 /**
   |============================
@@ -25,17 +33,15 @@
 */
 .header-container {
 display: flex;
-padding-top: 16px;
-padding-bottom: 16px;
+padding: 16px;;
 }
 .menu-nav {
     display: flex;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    align-items: center;
-    justify-content: center;
+    
+}
+.menu-nav-list {
+    display: flex;
     gap:40px;
-
 }
 .logo-image {
     
@@ -44,7 +50,7 @@ padding-bottom: 16px;
     display: block;
 }
 .title-header {
- display: block;   
+    
 font-weight: 700;
 font-size: 24px;
 line-height: 1.6;
@@ -59,7 +65,7 @@ color: var(--main-accent-color);
     justify-content: center;
 }
 .menu-nav-link {
-
+display: block;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -67,12 +73,20 @@ line-height: 1.5;
 letter-spacing: 0.5px;
 color: var(--main-text-color);
 }
+.nav-container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+}
+.menu-nav-item {
+    display: flex;
+}
  /**
    |============================
    | hero
    |============================
  */
- .hero {
+ .hero-container {
     width: 944px;
     height: 480px;
     background-image: url(../images/hero/picture\ 1.jpg);
@@ -86,10 +100,11 @@ color: var(--main-text-color);
     padding-right: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
-width: 432px;
-height: 192px;
-background-color: var(--accent-color);
-border-radius: 16px;
+
+    width: 432px;
+    height: 192px;
+    background-color: var(--accent-color);
+    border-radius: 16px;
 
  }
 .primary-title {
@@ -103,12 +118,27 @@ color: var(--main-background-color);
 }
 .text-body {
     font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 } 
 .text-body-light {
     width: 384px;
-height: 96px;
+    height: 96px;
     color: var(--main-background-color);
+}
+
+/**
+  |============================
+  | friends
+  |============================
+*/
+.secondary-title {
+margin-bottom: 40px;
+
+font-weight: 700;
+font-size: 24px;
+line-height: 40px;
+letter-spacing: 0.5px;
+color: var(--main-text-color);
 }
